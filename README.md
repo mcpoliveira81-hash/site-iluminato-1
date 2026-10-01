@@ -29,8 +29,7 @@ ILUMINATO/
     ├── sobre/          → equipe
     ├── casamentos/     → cerimônia ao ar livre
     ├── 15-anos/        → festa de 15 anos
-    ├── eventos/        → festa infantil, salão decorado, noite (LOVE)
-    ├── estrutura/      → área externa
+    ├── eventos/        → festa infantil, salão decorado, noite (LOVE), celebração ao ar livre
     └── depoimentos/    → cards reais de clientes (PNG originais + JPG)
 ```
 
@@ -68,8 +67,10 @@ Para trocar uma foto: substitua o arquivo `.jpg` mantendo o mesmo nome.
 
 > **REGRA DE OURO:** usar exclusivamente fotografias reais da Iluminato.
 > Nunca gerar, buscar ou substituir por imagens de IA ou bancos de imagens.
-> Sem foto adequada? Use composição da identidade (fundo verde + ornamento),
-> como já acontece nos cards de **Formaturas** e **Corporativos**.
+> Sem foto adequada? Use composição da identidade (fundo verde + ornamento) —
+> o padrão pronto está na classe `.event-card--brand`. Hoje nenhum card usa
+> foto artificial: **Formaturas** usa a fachada ao pôr do sol e o card de
+> **Corporativos** foi retirado do site (pode voltar assim, se desejado).
 
 ## Antes de publicar
 
