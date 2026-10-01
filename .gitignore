@@ -1,0 +1,12 @@
+# Material de trabalho — não versionar (fotos originais em alta e documentos)
+/1.jpg
+/2.jpg
+/A.jpg
+/62413877_*.jpg
+/SaveClip.App_*.jpg
+/*.pdf
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

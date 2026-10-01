@@ -1,0 +1,165 @@
+<!--
+titulo: Contato e agendamento de visita — Iluminato Espaço de Eventos
+descricao: Fale com o Iluminato Espaço de Eventos. Solicite informações, tire dúvidas e agende uma visita ao espaço para conhecer pessoalmente.
+og: assets/img/cerimonia-wide-1200.jpg
+-->
+
+<!-- ============================================================ HERO -->
+<section class="page-hero page-hero--flat">
+  <div class="page-hero__content">
+    <span class="eyebrow">Contato</span>
+    <h1>Vamos conversar sobre o seu evento.</h1>
+    <p>Conte um pouco do que você imagina. Nossa equipe retorna em até um dia útil com disponibilidade e próximos passos.</p>
+  </div>
+</section>
+
+<!-- ======================================================== CONTATO -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <aside class="contact-info reveal">
+        <div>
+          <span class="eyebrow eyebrow--linha">Fale conosco</span>
+          <h2 class="title-md">Seu próximo grande momento começa aqui.</h2>
+        </div>
+
+        <!-- TROCAR: telefone, e-mail, endereço, redes e horários -->
+        <div class="contact-item">
+          <span class="contact-item__label">Telefone</span>
+          <a class="contact-item__value" href="tel:+550000000000" data-track="phone_click" data-track-label="contato">(00) 0000-0000</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-item__label">WhatsApp</span>
+          <a class="contact-item__value" href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="contato">(00) 00000-0000</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-item__label">E-mail</span>
+          <a class="contact-item__value" href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-item__label">Endereço</span>
+          <p class="contact-item__value" style="margin:0">Rua Exemplo, 000 — Bairro<br>[Cidade] / [UF]</p>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-item__label">Instagram</span>
+          <a class="contact-item__value" href="https://www.instagram.com/seuperfil/" target="_blank" rel="noopener" data-track="instagram_click" data-track-label="contato">@seuperfil</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-item__label">Horário de atendimento</span>
+          <p class="contact-item__value" style="margin:0">Segunda a sexta, 9h às 19h<br>Sábado, 9h às 14h</p>
+        </div>
+      </aside>
+
+      <div class="reveal">
+        <form class="form" id="form-contato" novalidate aria-describedby="form-nota">
+          <div class="form__row">
+            <div class="field">
+              <label for="nome">Nome <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="nome" name="nome" autocomplete="name" required>
+              <p class="field__error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="whatsapp">WhatsApp <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" required placeholder="(00) 00000-0000">
+              <p class="field__error" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+              <p class="field__error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="tipo">Tipo de evento <span class="req" aria-hidden="true">*</span></label>
+              <select id="tipo" name="tipo" required>
+                <option value="">Selecione</option>
+                <option value="casamento">Casamento / cerimônia</option>
+                <option value="celebracao">Celebração (aniversário, 15 anos, boda, formatura)</option>
+                <option value="corporativo">Evento corporativo</option>
+                <option value="outro">Outro</option>
+              </select>
+              <p class="field__error" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="data">Data pretendida</label>
+              <input type="date" id="data" name="data">
+              <p class="field__error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="convidados">Número aproximado de convidados</label>
+              <input type="number" id="convidados" name="convidados" min="1" inputmode="numeric" placeholder="Ex.: 150">
+              <p class="field__error" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre o seu evento."></textarea>
+            <p class="field__error" role="alert"></p>
+          </div>
+
+          <!-- Anti-spam: campo invisível, deixe vazio -->
+          <div class="sr-only" aria-hidden="true">
+            <label for="website">Não preencha este campo</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form__foot">
+            <button class="btn" type="submit" data-track="schedule_visit_click" data-track-label="formulario">Solicitar informações</button>
+            <p class="form__note" id="form-nota">Campos marcados com * são obrigatórios. Seus dados são usados apenas para responder ao seu contato.</p>
+          </div>
+
+          <p class="field__error" id="form-erro" role="alert" hidden>Não foi possível enviar agora. Tente novamente pelo WhatsApp.</p>
+        </form>
+
+        <div class="form-success" id="form-success" role="status" aria-live="polite">
+          <h3>Obrigado pelo contato.</h3>
+          <p>Nossa equipe entrará em contato em breve.</p>
+          <div class="actions">
+            <a class="btn btn--ghost" href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="pos-formulario">Falar pelo WhatsApp agora</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= MAPA -->
+<section class="section section--white section--tight">
+  <div class="container">
+    <div class="split split--top">
+      <div class="reveal">
+        <span class="eyebrow eyebrow--linha">Como chegar</span>
+        <h2 class="title-lg">Visite o espaço.</h2>
+        <!-- TROCAR: endereço e link do Google Maps -->
+        <p class="texto" style="margin-top:22px">Rua Exemplo, 000 — Bairro<br>[Cidade] / [UF] — CEP 00000-000</p>
+        <div class="actions">
+          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=Iluminato+Espa%C3%A7o+de+Eventos" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <ul class="list-lined">
+          <li>Visitas mediante agendamento, de segunda a sábado</li>
+          <li>Estacionamento no local</li>
+          <li>Acesso por via principal com sinalização</li>
+          <li>Atendimento também por WhatsApp</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  /* Ativa as animações de entrada antes da primeira pintura e as desativa
+     novamente caso o site.js não carregue (garante conteúdo sempre visível). */
+  document.documentElement.classList.add('js');
+  setTimeout(function () {
+    if (!window.__ILUMINATO_ATIVO__) document.documentElement.classList.remove('js');
+  }, 4000);
+</script>
+<title>Celebrações — Aniversários, 15 anos, bodas e formaturas | Iluminato</title>
+<meta name="description" content="Espaço para aniversários, festas de 15 anos, bodas, formaturas e celebrações de família, com área externa, estrutura coberta e apoio completo.">
+<link rel="canonical" href="https://www.seudominio.com.br/celebracoes.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#3B4D4D">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Iluminato — Espaço de Eventos">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Celebrações — Aniversários, 15 anos, bodas e formaturas | Iluminato">
+<meta property="og:description" content="Espaço para aniversários, festas de 15 anos, bodas, formaturas e celebrações de família, com área externa, estrutura coberta e apoio completo.">
+<meta property="og:url" content="https://www.seudominio.com.br/celebracoes.html">
+<meta property="og:image" content="https://www.seudominio.com.br/assets/img/celebracao-1400.jpg">
+<meta property="og:image:alt" content="Casal celebrando o casamento no Iluminato Espaço de Eventos">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Celebrações — Aniversários, 15 anos, bodas e formaturas | Iluminato">
+<meta name="twitter:description" content="Espaço para aniversários, festas de 15 anos, bodas, formaturas e celebrações de família, com área externa, estrutura coberta e apoio completo.">
+<meta name="twitter:image" content="https://www.seudominio.com.br/assets/img/celebracao-1400.jpg">
+
+<link rel="icon" href="assets/img/logo-iluminato.jpg" type="image/jpeg">
+<link rel="apple-touch-icon" href="assets/img/logo-iluminato.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- TROCAR: nome, telefone, endereço, horário e coordenadas do espaço -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EventVenue",
+  "name": "Iluminato — Espaço de Eventos",
+  "description": "Espaço de eventos para casamentos, celebrações e encontros corporativos, com arquitetura contemporânea, paisagismo e estrutura completa.",
+  "url": "https://www.seudominio.com.br/celebracoes.html",
+  "logo": "https://www.seudominio.com.br/assets/img/logo-iluminato.jpg",
+  "image": "https://www.seudominio.com.br/assets/img/hero-casal-1440.jpg",
+  "telephone": "+55-00-0000-0000",
+  "email": "contato@seudominio.com.br",
+  "priceRange": "$$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Exemplo, 000 — Bairro",
+    "addressLocality": "[Cidade]",
+    "addressRegion": "[UF]",
+    "postalCode": "00000-000",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 0.0000, "longitude": 0.0000 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "sameAs": ["https://www.instagram.com/seuperfil/"],
+  "areaServed": "[Cidade]"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header" id="topo">
+  <div class="header-inner">
+    <!-- TROCAR: textos da marca, se o nome exibido for diferente -->
+    <a class="brand" href="index.html" aria-label="Iluminato Espaço de Eventos — ir para a página inicial">
+      <span class="brand__name">Iluminato</span>
+      <span class="brand__sub">Espaço de Eventos</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <ul class="nav__list">
+        <li><a class="nav__link" data-nav="espaco.html" href="espaco.html">O Espaço</a></li>
+        <li><a class="nav__link" data-nav="eventos.html" href="eventos.html">Eventos</a></li>
+        <li><a class="nav__link" data-nav="galeria.html" href="galeria.html">Galeria</a></li>
+        <li><a class="nav__link" data-nav="experiencia.html" href="experiencia.html">Experiência</a></li>
+        <li><a class="nav__link" data-nav="sobre.html" href="sobre.html">Sobre</a></li>
+        <li><a class="nav__link" data-nav="faq.html" href="faq.html">FAQ</a></li>
+      </ul>
+      <a class="nav__cta" href="contato.html" data-track="schedule_visit_click" data-track-label="header">Agendar uma visita</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu de navegação">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="menu-mobile" aria-hidden="true">
+  <nav aria-label="Navegação principal (celular)">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" data-nav="index.html"><span>01</span> Home</a></li>
+      <li><a href="espaco.html" data-nav="espaco.html"><span>02</span> O Espaço</a></li>
+      <li><a href="eventos.html" data-nav="eventos.html"><span>03</span> Eventos</a></li>
+      <li><a href="galeria.html" data-nav="galeria.html"><span>04</span> Galeria</a></li>
+      <li><a href="experiencia.html" data-nav="experiencia.html"><span>05</span> Experiência</a></li>
+      <li><a href="sobre.html" data-nav="sobre.html"><span>06</span> Sobre</a></li>
+      <li><a href="faq.html" data-nav="faq.html"><span>07</span> FAQ</a></li>
+      <li><a href="contato.html" data-nav="contato.html"><span>08</span> Contato</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav__foot">
+    <a class="btn" href="contato.html" data-track="schedule_visit_click" data-track-label="menu-mobile">Agendar uma visita</a>
+    <!-- TROCAR: número do WhatsApp (formato 55 + DDD + número) -->
+    <a class="btn btn--ghost" href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="menu-mobile">Falar pelo WhatsApp</a>
+    <p class="mobile-nav__meta">Seg a Sex, 9h às 19h · Sáb, 9h às 14h</p>
+  </div>
+</div>
+
+<main id="conteudo">
+<!-- ============================================================ HERO -->
+<section class="page-hero">
+  <div class="page-hero__media">
+    <img src="assets/img/celebracao-1400.jpg"
+         srcset="assets/img/celebracao-700.jpg 560w, assets/img/celebracao-1400.jpg 1120w"
+         sizes="100vw" width="1120" height="1400" fetchpriority="high" decoding="async"
+         alt="Festa infantil com decoração de balões montada no Iluminato Espaço de Eventos">
+  </div>
+  <div class="page-hero__content">
+    <span class="eyebrow">Celebrações</span>
+    <h1>Festas que juntam gerações em um só lugar.</h1>
+    <p>Aniversários, 15 anos, bodas, formaturas e as comemorações que a família guarda na memória.</p>
+    <div class="actions">
+      <a class="btn btn--light" href="contato.html" data-track="schedule_visit_click" data-track-label="hero-celebracoes">Agendar uma visita</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== CONCEITO -->
+<section class="section">
+  <div class="container">
+    <div class="editorial editorial--top">
+      <div class="editorial__media reveal reveal--img">
+        <figure class="figure figure--r-4x5" style="margin:0">
+          <img src="assets/img/celebracao-1400.jpg"
+               srcset="assets/img/celebracao-700.jpg 560w, assets/img/celebracao-1400.jpg 1120w"
+               sizes="(max-width: 1024px) 100vw, 46vw"
+               width="1120" height="1400" loading="lazy" decoding="async"
+               alt="Decoração de festa infantil com balões e mobiliário em área externa">
+        </figure>
+        <p class="figure__caption">Celebração infantil — área externa</p>
+      </div>
+      <div class="editorial__body reveal">
+        <span class="eyebrow eyebrow--linha">Festas de família</span>
+        <h2 class="title-lg">Do aniversário íntimo à grande comemoração.</h2>
+        <p class="texto">Cada festa tem o seu ritmo. O espaço se reorganiza para receber tanto o chá de bebê quanto a confraternização de fim de ano, mantendo a mesma qualidade de acabamento e a mesma atenção da equipe.</p>
+        <ul class="list-lined">
+          <li>Aniversários infantis e de adultos</li>
+          <li>Festas de 15 anos e bodas</li>
+          <li>Formaturas e comemorações escolares</li>
+          <li>Chás, batizados e encontros de família</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= ESTRUTURA -->
+<section class="section section--white">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Estrutura</span>
+      <h2 class="title-lg">Conforto para todas as idades.</h2>
+    </div>
+    <div class="split split--top">
+      <div class="reveal">
+        <ul class="list-lined">
+          <li>Área externa arborizada para as festas de dia</li>
+          <li>Ambiente coberto e climatizado para o jantar</li>
+          <li>Espaço para bufê, bolo e área infantil</li>
+          <li>Estacionamento no local</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <ul class="list-lined">
+          <li>Banheiros dimensionados para o número de convidados</li>
+          <li>Acesso para fornecedores e montagem</li>
+          <li>Alternativa coberta em caso de chuva</li>
+          <li>Equipe de apoio durante todo o evento</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= GALERIA -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow--linha">Galeria</span>
+      <h2 class="title-lg">Celebrações que já aconteceram aqui.</h2>
+    </div>
+    <div class="gallery reveal">
+      <button class="gallery__item g-1" type="button" data-gallery-item data-full="assets/img/celebracao-1400.jpg" data-caption="Festa infantil">
+        <img src="assets/img/celebracao-1400.jpg" width="1120" height="1400" loading="lazy" decoding="async" alt="Festa infantil com decoração em área externa">
+      </button>
+      <button class="gallery__item g-2" type="button" data-gallery-item data-full="assets/img/fachada-1094.jpg" data-caption="Fachada">
+        <img src="assets/img/fachada-1094.jpg" width="1094" height="730" loading="lazy" decoding="async" alt="Fachada do espaço ao entardecer">
+      </button>
+      <button class="gallery__item g-3" type="button" data-gallery-item data-full="assets/img/celebracao-1400.jpg" data-caption="Detalhes da decoração">
+        <img src="assets/img/celebracao-700.jpg" width="560" height="700" loading="lazy" decoding="async" alt="Decoração da festa no jardim">
+      </button>
+      <button class="gallery__item g-4" type="button" data-gallery-item data-full="assets/img/cerimonia-1400.jpg" data-caption="Gramada">
+        <img src="assets/img/cerimonia-700.jpg" width="560" height="700" loading="lazy" decoding="async" alt="Gramada do espaço ao fim da tarde">
+      </button>
+      <button class="gallery__item g-5" type="button" data-gallery-item data-full="assets/img/cerimonia-wide-1200.jpg" data-caption="Convidados">
+        <img src="assets/img/cerimonia-wide-1200.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="Convidados reunidos na gramada">
+      </button>
+      <button class="gallery__item g-6" type="button" data-gallery-item data-full="assets/img/hero-casal-1440.jpg" data-caption="Festa à noite">
+        <img src="assets/img/hero-casal-760.jpg" width="760" height="428" loading="lazy" decoding="async" alt="Celebração noturna no espaço">
+      </button>
+      <button class="gallery__item g-7" type="button" data-gallery-item data-full="assets/img/fachada-1094.jpg" data-caption="Estrutura">
+        <img src="assets/img/fachada-1094.jpg" width="1094" height="730" loading="lazy" decoding="async" alt="Estrutura externa do espaço">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== CTA -->
+<section class="section cta-band">
+  <div class="container">
+    <div class="cta-band__inner">
+      <div class="reveal">
+        <span class="eyebrow">Agende sua visita</span>
+        <h2>Seu próximo grande momento começa aqui.</h2>
+        <p>Conheça o espaço pessoalmente e descubra como podemos transformar sua ideia em uma celebração única.</p>
+      </div>
+      <div class="cta-band__side reveal">
+        <a class="btn btn--bege" href="contato.html" data-track="schedule_visit_click" data-track-label="cta-celebracoes">Agendar uma visita</a>
+        <a class="btn btn--ghost" href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="cta-celebracoes">Falar pelo WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/img/logo-iluminato.jpg" width="74" height="74" alt="Iluminato — Espaço de Eventos" loading="lazy" decoding="async">
+        <p class="footer__phrase">Momentos que merecem um cenário à altura.</p>
+      </div>
+
+      <div>
+        <h2 class="footer__title">Navegação</h2>
+        <ul class="footer__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="espaco.html">O Espaço</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="faq.html">Perguntas frequentes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- TROCAR: telefone, WhatsApp, e-mail, endereço e horários -->
+      <div>
+        <h2 class="footer__title">Contato</h2>
+        <ul class="footer__list">
+          <li><a href="tel:+550000000000" data-track="phone_click" data-track-label="footer">(00) 0000-0000</a></li>
+          <li><a href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="footer">WhatsApp</a></li>
+          <li><a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a></li>
+          <li>Rua Exemplo, 000 — Bairro<br>[Cidade] / [UF]</li>
+          <li>Seg a Sex, 9h às 19h<br>Sáb, 9h às 14h</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer__title">Instagram</h2>
+        <ul class="footer__list">
+          <li><a href="https://www.instagram.com/seuperfil/" target="_blank" rel="noopener" data-track="instagram_click" data-track-label="footer">@seuperfil</a></li>
+          <li><a href="contato.html" class="link-arrow">Agendar uma visita</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Iluminato — Espaço de Eventos</span>
+      <span>Todos os direitos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- TROCAR: número do WhatsApp (formato 55 + DDD + número) -->
+<a class="whatsapp-float" href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp" data-track="whatsapp_click" data-track-label="flutuante">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2.5A9.46 9.46 0 0 0 2.6 12c0 1.67.44 3.3 1.28 4.74L2.5 21.5l4.9-1.28A9.46 9.46 0 1 0 12.04 2.5zm0 17.35c-1.45 0-2.86-.39-4.1-1.12l-.29-.17-2.91.76.78-2.84-.19-.29a7.87 7.87 0 1 1 6.71 3.66z"/></svg>
+  <span class="whatsapp-float__label">Falar pelo WhatsApp</span>
+</a>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
