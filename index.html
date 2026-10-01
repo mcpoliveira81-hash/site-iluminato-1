@@ -1,521 +1,599 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-  /* Ativa as animações de entrada antes da primeira pintura e as desativa
-     novamente caso o site.js não carregue (garante conteúdo sempre visível). */
-  document.documentElement.classList.add('js');
-  setTimeout(function () {
-    if (!window.__ILUMINATO_ATIVO__) document.documentElement.classList.remove('js');
-  }, 4000);
-</script>
-<title>Iluminato — Espaço de Eventos para casamentos e celebrações</title>
-<meta name="description" content="Espaço de eventos sofisticado e acolhedor para casamentos, celebrações e encontros corporativos. Arquitetura contemporânea, natureza e estrutura completa. Agende uma visita.">
-<link rel="canonical" href="https://www.seudominio.com.br/">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#3B4D4D">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Iluminato — Espaço de Eventos">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Iluminato — Espaço de Eventos para casamentos e celebrações">
-<meta property="og:description" content="Espaço de eventos sofisticado e acolhedor para casamentos, celebrações e encontros corporativos. Arquitetura contemporânea, natureza e estrutura completa. Agende uma visita.">
-<meta property="og:url" content="https://www.seudominio.com.br/">
-<meta property="og:image" content="https://www.seudominio.com.br/assets/img/hero-casal-1440.jpg">
-<meta property="og:image:alt" content="Casal celebrando o casamento no Iluminato Espaço de Eventos">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Iluminato — Espaço de Eventos para casamentos e celebrações">
-<meta name="twitter:description" content="Espaço de eventos sofisticado e acolhedor para casamentos, celebrações e encontros corporativos. Arquitetura contemporânea, natureza e estrutura completa. Agende uma visita.">
-<meta name="twitter:image" content="https://www.seudominio.com.br/assets/img/hero-casal-1440.jpg">
+  <!-- ===== SEO ===== -->
+  <title>Iluminato Eventos | Espaço para Eventos em Santiago/RS</title>
+  <meta name="description" content="Iluminato Eventos em Santiago/RS. Um espaço planejado para celebrar casamentos, aniversários, formaturas, confraternizações e momentos especiais.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#123B2A">
+  <!-- Troque "iluminatoeventos.com.br" pelo domínio real antes de publicar -->
+  <link rel="canonical" href="https://iluminatoeventos.com.br/">
 
-<link rel="icon" href="assets/img/logo-iluminato.jpg" type="image/jpeg">
-<link rel="apple-touch-icon" href="assets/img/logo-iluminato.jpg">
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Iluminato Eventos">
+  <meta property="og:title" content="Iluminato Eventos | Espaço para Eventos em Santiago/RS">
+  <meta property="og:description" content="Um espaço planejado para celebrar casamentos, aniversários, formaturas, confraternizações e momentos especiais em Santiago/RS.">
+  <meta property="og:url" content="https://iluminatoeventos.com.br/">
+  <meta property="og:image" content="https://iluminatoeventos.com.br/assets/hero/fachada-por-do-sol.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Iluminato Eventos | Espaço para Eventos em Santiago/RS">
+  <meta name="twitter:description" content="Um espaço planejado para celebrar momentos inesquecíveis em Santiago/RS.">
+  <meta name="twitter:image" content="https://iluminatoeventos.com.br/assets/hero/fachada-por-do-sol.jpg">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/styles.css">
+  <!-- ===== Ícones ===== -->
+  <link rel="icon" type="image/png" href="assets/logo/iluminato-logo-original.png">
+  <link rel="apple-touch-icon" href="assets/logo/iluminato-logo-original.png">
 
-<!-- TROCAR: nome, telefone, endereço, horário e coordenadas do espaço -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EventVenue",
-  "name": "Iluminato — Espaço de Eventos",
-  "description": "Espaço de eventos para casamentos, celebrações e encontros corporativos, com arquitetura contemporânea, paisagismo e estrutura completa.",
-  "url": "https://www.seudominio.com.br/",
-  "logo": "https://www.seudominio.com.br/assets/img/logo-iluminato.jpg",
-  "image": "https://www.seudominio.com.br/assets/img/hero-casal-1440.jpg",
-  "telephone": "+55-00-0000-0000",
-  "email": "contato@seudominio.com.br",
-  "priceRange": "$$$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Rua Exemplo, 000 — Bairro",
-    "addressLocality": "[Cidade]",
-    "addressRegion": "[UF]",
-    "postalCode": "00000-000",
-    "addressCountry": "BR"
-  },
-  "geo": { "@type": "GeoCoordinates", "latitude": 0.0000, "longitude": 0.0000 },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    "opens": "09:00",
-    "closes": "19:00"
-  }],
-  "sameAs": ["https://www.instagram.com/seuperfil/"],
-  "areaServed": "[Cidade]"
-}
-</script>
+  <!-- ===== Tipografia ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ===== Pré-carregamento apenas da imagem Hero ===== -->
+  <link rel="preload" as="image" href="assets/hero/fachada-por-do-sol.jpg" media="(min-width: 769px)">
+  <link rel="preload" as="image" href="assets/hero/fachada-por-do-sol-640.jpg" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="assets/logo/iluminato-logo.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <noscript><style>[data-reveal]{opacity:1 !important;transform:none !important}</style></noscript>
+
+  <!-- ===== Dados estruturados (SEO local) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventVenue",
+    "name": "Iluminato Eventos",
+    "description": "Espaço para eventos em Santiago, Rio Grande do Sul. Celebrações de casamentos, aniversários, formaturas, confraternizações e eventos sociais.",
+    "url": "https://iluminatoeventos.com.br/",
+    "image": "https://iluminatoeventos.com.br/assets/hero/fachada-por-do-sol.jpg",
+    "telephone": "+5555999357369",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "BR-287",
+      "addressLocality": "Santiago",
+      "addressRegion": "RS",
+      "postalCode": "97700-000",
+      "addressCountry": "BR"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Santiago, Rio Grande do Sul"
+    }
+  }
+  </script>
 </head>
+
 <body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-<header class="site-header" id="topo">
-  <div class="header-inner">
-    <!-- TROCAR: textos da marca, se o nome exibido for diferente -->
-    <a class="brand" href="index.html" aria-label="Iluminato Espaço de Eventos — ir para a página inicial">
-      <span class="brand__name">Iluminato</span>
-      <span class="brand__sub">Espaço de Eventos</span>
-    </a>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-    <nav class="nav" aria-label="Navegação principal">
-      <ul class="nav__list">
-        <li><a class="nav__link" data-nav="espaco.html" href="espaco.html">O Espaço</a></li>
-        <li><a class="nav__link" data-nav="eventos.html" href="eventos.html">Eventos</a></li>
-        <li><a class="nav__link" data-nav="galeria.html" href="galeria.html">Galeria</a></li>
-        <li><a class="nav__link" data-nav="experiencia.html" href="experiencia.html">Experiência</a></li>
-        <li><a class="nav__link" data-nav="sobre.html" href="sobre.html">Sobre</a></li>
-        <li><a class="nav__link" data-nav="faq.html" href="faq.html">FAQ</a></li>
+  <!-- ===== Sprites de ícones ===== -->
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.2 7-11.2a7 7 0 1 0-14 0c0 5 7 11.2 7 11.2Z"/><circle cx="12" cy="10.2" r="2.6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.4l1.7 4.2-2.1 1.3a12.6 12.6 0 0 0 5.5 5.5l1.3-2.1L19 14.6V18a2 2 0 0 1-2.2 2A15.6 15.6 0 0 1 3 6.2 2 2 0 0 1 5 4Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.4 2.6 2.6L16 9.6"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M4.8 19.2C4.8 11.3 11.3 4.8 19.2 4.8c0 7.9-6.5 14.4-14.4 14.4Z"/><path d="M4.8 19.2c2.7-3.6 6.2-6.8 10.4-9.1"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m11 3 1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4l-1.8-4.9L4.3 9.7l4.9-1.8Z"/><path d="m18.3 15 .7 1.9 1.9.7-1.9.7-.7 1.9-.7-1.9-1.9-.7 1.9-.7Z"/></symbol>
+    <symbol id="i-arch" viewBox="0 0 24 24"><path d="M3.5 21V11a8.5 8.5 0 0 1 17 0v10"/><path d="M8 21v-9.4a4 4 0 0 1 8 0V21"/></symbol>
+    <symbol id="i-frame" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="1.6"/><circle cx="9" cy="9.6" r="1.5"/><path d="m4.5 16.6 4.3-4.3 3.4 3.4 2.8-2.8 4.7 4.7"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.9"/><circle cx="17.1" cy="6.9" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.5V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21Z"/></symbol>
+  </svg>
+
+  <!-- ===== Cabeçalho ===== -->
+  <header class="site-header" id="topo">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Iluminato Eventos — voltar ao início">
+        <img src="assets/logo/iluminato-logo.png" alt="Iluminato Eventos — Espaço de Eventos" width="435" height="164">
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#espaco">O Espaço</a></li>
+          <li><a class="nav__link" href="#eventos">Eventos</a></li>
+          <li><a class="nav__link" href="#estrutura">Estrutura</a></li>
+          <li><a class="nav__link" href="#galeria">Galeria</a></li>
+          <li><a class="nav__link" href="#localizacao">Localização</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__icon" href="https://wa.me/5555999357369?text=Ol%C3%A1%21%20Conheci%20a%20Iluminato%20Eventos%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20e%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-whatsapp aria-label="Falar com a Iluminato Eventos no WhatsApp">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        </a>
+        <a class="btn btn--gold btn--sm" href="https://wa.me/5555999357369?text=Ol%C3%A1%21%20Conheci%20a%20Iluminato%20Eventos%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20e%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-whatsapp>
+          Solicitar orçamento
+        </a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Menu mobile ===== -->
+  <div class="menu-mobile" id="menu-mobile" hidden>
+    <div class="menu-mobile__top">
+      <img src="assets/logo/iluminato-logo.png" alt="" width="435" height="164">
+      <button class="menu-mobile__close" type="button" aria-label="Fechar menu">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <nav aria-label="Navegação mobile">
+      <ul class="menu-mobile__list">
+        <li style="--i:0"><a href="#espaco">O Espaço</a></li>
+        <li style="--i:1"><a href="#eventos">Eventos</a></li>
+        <li style="--i:2"><a href="#estrutura">Estrutura</a></li>
+        <li style="--i:3"><a href="#galeria">Galeria</a></li>
+        <li style="--i:4"><a href="#localizacao">Localização</a></li>
       </ul>
-      <a class="nav__cta" href="contato.html" data-track="schedule_visit_click" data-track-label="header">Agendar uma visita</a>
     </nav>
-
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu de navegação">
-      <span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<div class="mobile-nav" id="menu-mobile" aria-hidden="true">
-  <nav aria-label="Navegação principal (celular)">
-    <ul class="mobile-nav__list">
-      <li><a href="index.html" data-nav="index.html"><span>01</span> Home</a></li>
-      <li><a href="espaco.html" data-nav="espaco.html"><span>02</span> O Espaço</a></li>
-      <li><a href="eventos.html" data-nav="eventos.html"><span>03</span> Eventos</a></li>
-      <li><a href="galeria.html" data-nav="galeria.html"><span>04</span> Galeria</a></li>
-      <li><a href="experiencia.html" data-nav="experiencia.html"><span>05</span> Experiência</a></li>
-      <li><a href="sobre.html" data-nav="sobre.html"><span>06</span> Sobre</a></li>
-      <li><a href="faq.html" data-nav="faq.html"><span>07</span> FAQ</a></li>
-      <li><a href="contato.html" data-nav="contato.html"><span>08</span> Contato</a></li>
-    </ul>
-  </nav>
-  <div class="mobile-nav__foot">
-    <a class="btn" href="contato.html" data-track="schedule_visit_click" data-track-label="menu-mobile">Agendar uma visita</a>
-    <!-- TROCAR: número do WhatsApp (formato 55 + DDD + número) -->
-    <a class="btn btn--ghost" href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="menu-mobile">Falar pelo WhatsApp</a>
-    <p class="mobile-nav__meta">Seg a Sex, 9h às 19h · Sáb, 9h às 14h</p>
-  </div>
-</div>
-
-<main id="conteudo">
-<!-- ============================================================ HERO -->
-<section class="hero">
-  <div class="hero__media">
-    <img
-      src="assets/img/hero-casal-1440.jpg"
-      srcset="assets/img/hero-casal-760.jpg 760w, assets/img/hero-casal-1440.jpg 1440w"
-      sizes="100vw"
-      width="1440" height="810"
-      fetchpriority="high" decoding="async"
-      alt="Casal se beijando sob fogos de artifício durante cerimônia no Iluminato Espaço de Eventos">
-  </div>
-
-  <div class="hero__content">
-    <span class="eyebrow">Um lugar para celebrar</span>
-    <h1 class="hero__title">Onde momentos especiais ganham um cenário inesquecível.</h1>
-    <p class="hero__text">Um espaço sofisticado e acolhedor para celebrar histórias, encontros e momentos que merecem ser lembrados.</p>
-
-    <div class="actions">
-      <a class="btn" href="espaco.html">Conheça o espaço</a>
-      <a class="btn btn--ghost" href="contato.html" data-track="schedule_visit_click" data-track-label="hero">Agendar uma visita</a>
+    <div class="menu-mobile__foot">
+      <a class="btn btn--gold" href="https://wa.me/5555999357369?text=Ol%C3%A1%21%20Conheci%20a%20Iluminato%20Eventos%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20e%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-whatsapp>Solicitar orçamento</a>
+      <p class="menu-mobile__place">Santiago • RS</p>
     </div>
   </div>
 
-  <span class="hero__scroll" aria-hidden="true">Descubra</span>
-</section>
+  <main id="conteudo">
 
-<!-- ====================================================== O ESPAÇO -->
-<section class="section">
-  <div class="container">
-    <div class="editorial">
-      <div class="editorial__media reveal reveal--img">
-        <figure class="figure figure--r-4x5" style="margin:0">
-          <img src="assets/img/cerimonia-1400.jpg"
-               srcset="assets/img/cerimonia-700.jpg 560w, assets/img/cerimonia-1400.jpg 1120w"
-               sizes="(max-width: 1024px) 100vw, 46vw"
-               width="1120" height="1400" loading="lazy" decoding="async"
-               alt="Vista aérea de cerimônia ao ar livre realizada no Iluminato Espaço de Eventos">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio" aria-label="Iluminato Eventos">
+      <div class="hero__media">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/hero/fachada-por-do-sol-640.jpg">
+          <img src="assets/hero/fachada-por-do-sol.jpg" alt="Fachada da Iluminato Eventos ao pôr do sol, em Santiago - RS" width="1024" height="683" fetchpriority="high">
+        </picture>
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light" data-reveal>Iluminato Eventos</p>
+        <h1 class="hero__title" data-reveal style="--d:.1s">Eternize a celebração.</h1>
+        <p class="hero__subtitle" data-reveal style="--d:.24s">Um espaço planejado para transformar celebrações em experiências inesquecíveis.</p>
+        <div class="hero__actions" data-reveal style="--d:.38s">
+          <a class="btn btn--gold" href="https://wa.me/5555999357369?text=Ol%C3%A1%21%20Conheci%20a%20Iluminato%20Eventos%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20e%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-whatsapp>
+            Solicitar orçamento
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#espaco">Conhecer o espaço</a>
+        </div>
+      </div>
+
+      <div class="hero__foot">
+        <p class="hero__place"><span class="hero__place-line" aria-hidden="true"></span>Santiago • RS</p>
+        <a class="hero__scroll" href="#espaco" aria-label="Rolar para conhecer o espaço">
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Sobre ===== -->
+    <section class="section section--off" id="espaco">
+      <div class="container about">
+        <figure class="about__media" data-reveal>
+          <img src="assets/sobre/equipe-iluminato.jpg" alt="Equipe da Iluminato Eventos em um ambiente decorado para celebração" width="1024" height="683" loading="lazy">
+          <figcaption>Equipe Iluminato</figcaption>
         </figure>
-        <p class="figure__caption">Cerimônia externa — gramada principal</p>
-      </div>
 
-      <div class="editorial__body reveal">
-        <span class="eyebrow eyebrow--linha">O espaço</span>
-        <h2 class="title-lg">Um cenário pensado para celebrar.</h2>
-        <p class="texto">Cada detalhe do Iluminato foi pensado para receber bem.Volumes contemporâneos, materiais naturais e luz que muda de cor ao longo do dia dialogam com o paisagismo e com as áreas externas.</p>
-        <p class="texto">São ambientes internos e externos que se completam — da cerimônia na gramada ao jantar sob a estrutura coberta — sempre com a mesma sensação de que, ali, aquele momento importa.</p>
-
-        <div class="actions">
-          <a class="btn btn--ghost" href="espaco.html">Conheça nosso espaço</a>
+        <div class="about__text">
+          <p class="eyebrow" data-reveal>Sobre a Iluminato</p>
+          <h2 data-reveal style="--d:.1s">Um espaço pensado para celebrar.</h2>
+          <p class="lead" data-reveal style="--d:.2s">A Iluminato Eventos foi planejada para receber momentos que merecem ser lembrados. Em meio à natureza e com estrutura preparada para diferentes celebrações, o espaço une conforto, elegância e uma atmosfera acolhedora para tornar cada evento único.</p>
+          <a class="link-arrow" href="#eventos" data-reveal style="--d:.3s">
+            Conhecer os tipos de evento
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ==================================================== DIFERENCIAIS -->
-<section class="section section--white">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Por que o Iluminato</span>
-      <h2 class="title-lg">Quatro decisões que fazem a diferença no dia do evento.</h2>
-    </div>
-
-    <div class="pillars">
-      <article class="pillar reveal" style="--delay:0ms">
-        <span class="pillar__num">01</span>
-        <div class="pillar__img">
-          <img src="assets/img/fachada-547.jpg" width="547" height="365" loading="lazy" decoding="async"
-               alt="Fachada do Iluminato Espaço de Eventos ao entardecer">
-        </div>
-        <h3>Arquitetura</h3>
-        <p>Linhas limpas, pé-direito generoso e materiais que envelhecem bem — um cenário que não briga com a sua decoração.</p>
-      </article>
-
-      <article class="pillar reveal" style="--delay:90ms">
-        <span class="pillar__num">02</span>
-        <div class="pillar__img">
-          <img src="assets/img/celebracao-700.jpg" width="560" height="700" loading="lazy" decoding="async"
-               alt="Decoração de festa infantil em meio ao paisagismo do espaço">
-        </div>
-        <h3>Natureza</h3>
-        <p>Gramado, arborização e paisagismo cuidadoso que enquadram cada celebração e tornam a fotografia parte do evento.</p>
-      </article>
-
-      <article class="pillar reveal" style="--delay:180ms">
-        <span class="pillar__num">03</span>
-        <div class="pillar__img">
-          <img src="assets/img/cerimonia-wide-1200.jpg" width="1200" height="750" loading="lazy" decoding="async"
-               alt="Estrutura externa preparada para receber convidados">
-        </div>
-        <h3>Estrutura</h3>
-        <p>Ambientes preparados, apoio para fornecedores, energia e infraestrutura prontos para eventos completos.</p>
-      </article>
-
-      <article class="pillar reveal" style="--delay:270ms">
-        <span class="pillar__num">04</span>
-        <div class="pillar__img">
-          <img src="assets/img/hero-casal-760.jpg" width="760" height="428" loading="lazy" decoding="async"
-               alt="Casal celebrando no final da cerimônia">
-        </div>
-        <h3>Experiência</h3>
-        <p>Uma equipe presente do primeiro contato ao último convidado, cuidando do que você não precisa se preocupar.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================================= EVENTOS -->
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow eyebrow--linha">Eventos</span>
-      <h2 class="title-lg">Para cada celebração, um jeito único de viver o espaço.</h2>
-      <p class="lead">Casamentos, festas familiares e encontros corporativos encontram aqui o mesmo cuidado — e configurações diferentes de ambiente.</p>
-    </div>
-
-    <div class="events">
-      <article class="event reveal">
-        <div class="event__media">
-          <figure class="figure figure--r-3x2" style="margin:0">
-            <img src="assets/img/hero-casal-1440.jpg"
-                 srcset="assets/img/hero-casal-760.jpg 760w, assets/img/hero-casal-1440.jpg 1440w"
-                 sizes="(max-width: 1024px) 100vw, 56vw"
-                 width="1440" height="810" loading="lazy" decoding="async"
-                 alt="Noivos se beijando ao fim da cerimônia, com fogos ao fundo">
-          </figure>
-        </div>
-        <div class="event__body">
-          <span class="micro">01 — Casamentos</span>
-          <h3>Casamentos</h3>
-          <p>Cerimônias e recepções pensadas para celebrar histórias de amor — do vows na gramada ao baile sob a estrutura.</p>
-          <ul class="event__tags">
-            <li>Cerimônia externa</li>
-            <li>Recepção</li>
-            <li>Mini wedding</li>
-            <li>Noivado</li>
-          </ul>
-          <a class="link-arrow" href="casamentos.html" data-track-label="home-casamentos">Ver casamentos</a>
-        </div>
-      </article>
-
-      <article class="event event--reverse reveal">
-        <div class="event__media">
-          <figure class="figure figure--r-3x2" style="margin:0">
-            <img src="assets/img/celebracao-1400.jpg"
-                 srcset="assets/img/celebracao-700.jpg 560w, assets/img/celebracao-1400.jpg 1120w"
-                 sizes="(max-width: 1024px) 100vw, 56vw"
-                 width="1120" height="1400" loading="lazy" decoding="async"
-                 alt="Festa infantil com decoração de balões em área externa do espaço">
-          </figure>
-        </div>
-        <div class="event__body">
-          <span class="micro">02 — Celebrações</span>
-          <h3>Celebrações</h3>
-          <p>Aniversários, 15 anos, bodas, formaturas e festas de família em um ambiente que acolhe todas as idades.</p>
-          <ul class="event__tags">
-            <li>Aniversários</li>
-            <li>15 anos</li>
-            <li>Bodas</li>
-            <li>Formaturas</li>
-          </ul>
-          <a class="link-arrow" href="celebracoes.html">Ver celebrações</a>
-        </div>
-      </article>
-
-      <article class="event reveal">
-        <div class="event__media">
-          <figure class="figure figure--r-3x2" style="margin:0">
-            <img src="assets/img/fachada-1094.jpg" width="1094" height="730" loading="lazy" decoding="async"
-                 alt="Fachada do espaço com estrutura externa ao entardecer">
-          </figure>
-        </div>
-        <div class="event__body">
-          <span class="micro">03 — Corporativos</span>
-          <h3>Corporativos</h3>
-          <p>Confraternizações, lançamentos, workshops e reuniões em um endereço que já comunica cuidado antes da primeira palavra.</p>
-          <ul class="event__tags">
-            <li>Confraternizações</li>
-            <li>Lançamentos</li>
-            <li>Workshops</li>
-            <li>Reuniões</li>
-          </ul>
-          <a class="link-arrow" href="corporativos.html">Ver eventos corporativos</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ======================================================== GALERIA -->
-<section class="section section--white">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Galeria</span>
-      <h2 class="title-lg">O que acontece quando o cenário está à altura.</h2>
-    </div>
-
-    <div class="gallery reveal">
-      <button class="gallery__item g-1" type="button" data-gallery-item
-              data-full="assets/img/cerimonia-1400.jpg"
-              data-caption="Cerimônia ao ar livre">
-        <img src="assets/img/cerimonia-1400.jpg" width="1120" height="1400" loading="lazy" decoding="async"
-             alt="Vista aérea da cerimônia ao ar livre com convidados na gramada">
-      </button>
-
-      <button class="gallery__item g-2" type="button" data-gallery-item
-              data-full="assets/img/fachada-1094.jpg"
-              data-caption="Fachada ao entardecer">
-        <img src="assets/img/fachada-1094.jpg" width="1094" height="730" loading="lazy" decoding="async"
-             alt="Fachada do Iluminato Espaço de Eventos ao entardecer">
-      </button>
-
-      <button class="gallery__item g-3" type="button" data-gallery-item
-              data-full="assets/img/celebracao-1400.jpg"
-              data-caption="Celebração infantil">
-        <img src="assets/img/celebracao-700.jpg" width="560" height="700" loading="lazy" decoding="async"
-             alt="Decoração de festa infantil com balões e roupas penduradas">
-      </button>
-
-      <button class="gallery__item g-4" type="button" data-gallery-item
-              data-full="assets/img/hero-casal-1440.jpg"
-              data-caption="Fim de cerimônia">
-        <img src="assets/img/hero-casal-760.jpg" width="760" height="428" loading="lazy" decoding="async"
-             alt="Casal se beijando sob fogos de artifício">
-      </button>
-
-      <button class="gallery__item g-5" type="button" data-gallery-item
-              data-full="assets/img/cerimonia-wide-1200.jpg"
-              data-caption="Convidados na gramada">
-        <img src="assets/img/cerimonia-wide-1200.jpg" width="1200" height="750" loading="lazy" decoding="async"
-             alt="Convidados acomodados na gramada durante a cerimônia">
-      </button>
-
-      <button class="gallery__item g-6" type="button" data-gallery-item
-              data-full="assets/img/celebracao-1400.jpg"
-              data-caption="Detalhes da decoração">
-        <img src="assets/img/celebracao-1400.jpg" width="1120" height="1400" loading="lazy" decoding="async"
-             alt="Detalhes da decoração de uma festa no espaço">
-      </button>
-
-      <button class="gallery__item g-7" type="button" data-gallery-item
-              data-full="assets/img/cerimonia-wide-1200.jpg"
-              data-caption="Estrutura externa">
-        <img src="assets/img/fachada-1094.jpg" width="1094" height="730" loading="lazy" decoding="async"
-             alt="Área externa do espaço preparada para receber">
-      </button>
-    </div>
-
-    <div class="gallery__more">
-      <a class="btn btn--ghost" href="galeria.html">Ver galeria completa</a>
-    </div>
-  </div>
-</section>
-
-<!-- ==================================================== EXPERIÊNCIA -->
-<section class="section">
-  <div class="container">
-    <div class="editorial editorial--reverse">
-      <div class="editorial__media reveal reveal--img">
-        <figure class="figure figure--r-4x5" style="margin:0">
-          <img src="assets/img/celebracao-1400.jpg"
-               srcset="assets/img/celebracao-700.jpg 560w, assets/img/celebracao-1400.jpg 1120w"
-               sizes="(max-width: 1024px) 100vw, 46vw"
-               width="1120" height="1400" loading="lazy" decoding="async"
-               alt="Ambiente preparado para celebração com decoração natural">
-        </figure>
-        <p class="figure__caption">Preparação do ambiente — dia do evento</p>
-      </div>
-
-      <div class="editorial__body reveal">
-        <span class="eyebrow eyebrow--linha">Experiência</span>
-        <h2 class="title-lg">Mais do que um espaço. Uma experiência.</h2>
-        <p class="texto">Há uma diferença entre alugar um lugar e ser recebido. Aqui, cada etapa acontece com presença: conversamos sobre a sua ideia, mostramos o espaço com calma, alinhamos o planejamento com os seus fornecedores e estamos por perto no dia.</p>
-        <ul class="list-lined">
-          <li>Atendimento próximo desde o primeiro contato</li>
-          <li>Visita guiada, sem pressa</li>
-          <li>Planejamento junto com os fornecedores</li>
-          <li>Acompanhamento no dia do evento</li>
+      <div class="container">
+        <ul class="strip" data-reveal>
+          <li class="strip__item"><span aria-hidden="true"></span>Santiago / RS</li>
+          <li class="strip__item"><span aria-hidden="true"></span>Espaço para eventos</li>
+          <li class="strip__item"><span aria-hidden="true"></span>Ambiente integrado à natureza</li>
+          <li class="strip__item"><span aria-hidden="true"></span>Eventos personalizados</li>
         </ul>
-        <div class="actions">
-          <a class="btn btn--ghost" href="experiencia.html">Conhecer a experiência</a>
+      </div>
+    </section>
+
+    <!-- ===== A experiência ===== -->
+    <section class="section section--verde" id="experiencia">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow eyebrow--light" data-reveal>A experiência</p>
+          <h2 data-reveal style="--d:.1s">Mais do que um espaço.<br>Uma experiência.</h2>
+        </header>
+
+        <div class="exp-grid">
+          <article class="exp-card" data-reveal style="--d:.05s">
+            <svg class="icon exp-card__icon" aria-hidden="true"><use href="#i-leaf"/></svg>
+            <h3>Natureza</h3>
+            <p>Ambientes que valorizam a conexão com o entorno.</p>
+          </article>
+          <article class="exp-card" data-reveal style="--d:.15s">
+            <svg class="icon exp-card__icon" aria-hidden="true"><use href="#i-sparkle"/></svg>
+            <h3>Celebração</h3>
+            <p>Um cenário preparado para momentos únicos.</p>
+          </article>
+          <article class="exp-card" data-reveal style="--d:.25s">
+            <svg class="icon exp-card__icon" aria-hidden="true"><use href="#i-arch"/></svg>
+            <h3>Elegância</h3>
+            <p>Arquitetura, decoração e iluminação em harmonia.</p>
+          </article>
+          <article class="exp-card" data-reveal style="--d:.35s">
+            <svg class="icon exp-card__icon" aria-hidden="true"><use href="#i-frame"/></svg>
+            <h3>Memórias</h3>
+            <p>Um lugar para viver o momento e guardar a lembrança.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================================================= INSTITUCIONAL -->
-<section class="section section--dark">
-  <div class="container">
-    <div class="split split--top">
-      <div class="reveal">
-        <span class="eyebrow">Sobre o Iluminato</span>
-        <h2 class="title-lg">Feito para receber. Criado para permanecer na memória.</h2>
-      </div>
-      <div class="prose reveal">
-        <p>O Iluminato nasceu de uma ideia simples: criar um lugar onde a arquitetura servisse à celebração, e não o contrário. Cada volume, cada jardão e cada passagem de luz foi pensado para receber pessoas.</p>
-        <p>Hoje, o espaço recebe casamentos, festas familiares e encontros de empresa com a mesma atenção — uma equipe pequena, conhecedora de cada canto da casa, que trata a sua data como se fosse a dela.</p>
-        <div class="actions">
-          <a class="btn btn--light" href="sobre.html">Conhecer nossa história</a>
+    <!-- ===== Eventos ===== -->
+    <section class="section section--off" id="eventos">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>Eventos</p>
+          <h2 data-reveal style="--d:.1s">Cada celebração tem o seu cenário.</h2>
+          <p class="section-head__lead" data-reveal style="--d:.2s">Do “sim” ao abraço de fim de ano, a Iluminato recebe cada tipo de celebração com a mesma atenção aos detalhes.</p>
+        </header>
+
+        <div class="events-grid">
+          <article class="event-card" data-reveal>
+            <div class="event-card__media">
+              <img src="assets/casamentos/cerimonia-ao-ar-livre.jpg" alt="Cerimônia de casamento ao ar livre na Iluminato Eventos" width="1024" height="683" loading="lazy">
+            </div>
+            <div class="event-card__body">
+              <h3>Casamentos</h3>
+              <p>Cerimônias e recepções em um cenário de luz e natureza.</p>
+              <span class="event-card__line" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <article class="event-card" data-reveal style="--d:.1s">
+            <div class="event-card__media">
+              <img src="assets/15-anos/festa-15-anos.jpg" alt="Festa de 15 anos na Iluminato Eventos" width="820" height="1024" loading="lazy">
+            </div>
+            <div class="event-card__body">
+              <h3>15 Anos</h3>
+              <p>Uma noite inesquecível para marcar essa passagem.</p>
+              <span class="event-card__line" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <article class="event-card" data-reveal style="--d:.2s">
+            <div class="event-card__media">
+              <img src="assets/eventos/festa-infantil.jpg" alt="Aniversário infantil na Iluminato Eventos" width="1024" height="683" loading="lazy">
+            </div>
+            <div class="event-card__body">
+              <h3>Aniversários</h3>
+              <p>De 1 a 100 anos, celebrando a vida com quem importa.</p>
+              <span class="event-card__line" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <article class="event-card" data-reveal style="--d:.3s">
+            <div class="event-card__media">
+              <img src="assets/eventos/salao-decorado.jpg" alt="Salão decorado para um evento social na Iluminato" width="1024" height="683" loading="lazy">
+            </div>
+            <div class="event-card__body">
+              <h3>Eventos Sociais</h3>
+              <p>Confraternizações, comemorações e encontros especiais.</p>
+              <span class="event-card__line" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <!-- Cards sem fotografia própria usam composição da identidade (nunca imagens artificiais) -->
+          <article class="event-card event-card--brand" data-reveal style="--d:.4s">
+            <div class="event-card__media event-card__media--brand" aria-hidden="true">
+              <svg class="icon"><use href="#i-sparkle"/></svg>
+            </div>
+            <div class="event-card__body">
+              <h3>Formaturas</h3>
+              <p>A conquista celebrada com todo mundo que importa.</p>
+              <span class="event-card__line" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <article class="event-card event-card--brand" data-reveal style="--d:.5s">
+            <div class="event-card__media event-card__media--brand" aria-hidden="true">
+              <svg class="icon"><use href="#i-arch"/></svg>
+            </div>
+            <div class="event-card__body">
+              <h3>Corporativos</h3>
+              <p>Encontros, confraternizações e celebrações empresariais.</p>
+              <span class="event-card__line" aria-hidden="true"></span>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ========================================================== CTA -->
-<section class="section cta-band">
-  <div class="container">
-    <div class="cta-band__inner">
-      <div class="reveal">
-        <span class="eyebrow">Agende sua visita</span>
-        <h2>Seu próximo grande momento começa aqui.</h2>
-        <p>Conheça o espaço pessoalmente e descubra como podemos transformar sua ideia em uma celebração única.</p>
-      </div>
-      <div class="cta-band__side reveal">
-        <a class="btn btn--bege" href="contato.html" data-track="schedule_visit_click" data-track-label="cta-home">Agendar uma visita</a>
-        <!-- TROCAR: número do WhatsApp (formato 55 + DDD + número) -->
-        <a class="btn btn--ghost" href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="cta-home">Falar pelo WhatsApp</a>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- ===== Estrutura ===== -->
+    <section class="section section--white" id="estrutura">
+      <div class="container estrutura">
+        <div class="estrutura__text">
+          <p class="eyebrow" data-reveal>Estrutura</p>
+          <h2 data-reveal style="--d:.1s">Tudo preparado para o seu momento.</h2>
+          <p class="section-head__lead" data-reveal style="--d:.2s">Uma visão geral do que você encontra no espaço. Itens e detalhes podem ser confirmados diretamente com a equipe.</p>
 
-<!--
-  DEPOIMENTOS — não publicamos avaliações inventadas.
-  Para ativar, descomente o bloco abaixo em _build\pages\index.html e
-  substitua por depoimentos reais, autorizados pelos autores.
+          <ul class="feature-list">
+            <li data-reveal style="--d:.25s"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Salão de eventos</strong> — ambiente coberto, pronto para receber a sua celebração.</span></li>
+            <li data-reveal style="--d:.32s"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Área externa e jardim</strong> — espaço aberto integrado à natureza.</span></li>
+            <li data-reveal style="--d:.39s"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Cerimônias ao ar livre</strong> — um cenário natural para o momento mais esperado.</span></li>
+            <li data-reveal style="--d:.46s"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Iluminação do espaço</strong> — fachada e áreas iluminadas para noites memoráveis.</span></li>
+            <li data-reveal style="--d:.53s"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Ambiente decorável</strong> — um espaço que se adapta à identidade do seu evento.</span></li>
+            <li data-reveal style="--d:.6s"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Eventos infantis</strong> — festas infantis recebidas com a mesma estrutura.</span></li>
+          </ul>
 
-  <section class="section section--white">
-    <div class="container">
-      <div class="testimonial reveal">
-        <p class="testimonial__quote">Desde a primeira visita, sentimos que aquele seria o lugar onde nossa história continuaria sendo celebrada.</p>
-        <p class="testimonial__author"><strong>Nome do casal</strong><span>Casamento — 2025</span></p>
+          <a class="link-arrow" href="https://wa.me/5555999357369?text=Ol%C3%A1%21%20Conheci%20a%20Iluminato%20Eventos%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20e%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-whatsapp data-reveal style="--d:.65s">
+            Confirmar estrutura com a equipe
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+
+        <figure class="estrutura__media" data-reveal style="--d:.15s">
+          <img src="assets/estrutura/area-externa.jpg" alt="Área externa da Iluminato durante um casamento ao ar livre" width="1024" height="683" loading="lazy">
+        </figure>
       </div>
-    </div>
-  </section>
--->
-</main>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer__grid">
+    </section>
+
+    <!-- ===== Galeria ===== -->
+    <section class="section section--dark" id="galeria">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow eyebrow--light" data-reveal>Galeria</p>
+          <h2 data-reveal style="--d:.1s">Momentos que já ganharam vida aqui.</h2>
+        </header>
+
+        <div class="gallery" data-reveal style="--d:.2s">
+          <button class="gallery__item" type="button" data-lightbox="galeria" data-src="assets/eventos/noite-love.jpg" data-caption="Casal de noivos diante das letras iluminadas, na noite do evento.">
+            <img src="assets/eventos/noite-love.jpg" alt="Casal de noivos diante das letras LOVE iluminadas na Iluminato" width="1024" height="683" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-lightbox="galeria" data-src="assets/15-anos/festa-15-anos.jpg" data-caption="Festa de 15 anos na área externa da Iluminato.">
+            <img src="assets/15-anos/festa-15-anos.jpg" alt="Jovem com vestido azul na sua festa de 15 anos na Iluminato" width="820" height="1024" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-lightbox="galeria" data-src="assets/casamentos/cerimonia-ao-ar-livre.jpg" data-caption="Cerimônia ao ar livre com convidados, ao entardecer.">
+            <img src="assets/casamentos/cerimonia-ao-ar-livre.jpg" alt="Cerimônia de casamento ao ar livre com convidados na Iluminato" width="1024" height="683" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-lightbox="galeria" data-src="assets/hero/fachada-por-do-sol.jpg" data-caption="A fachada da Iluminato no pôr do sol.">
+            <img src="assets/hero/fachada-por-do-sol.jpg" alt="Fachada da Iluminato Eventos iluminada no pôr do sol" width="1024" height="683" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-lightbox="galeria" data-src="assets/eventos/salao-decorado.jpg" data-caption="Salão decorado, pronto para receber os convidados.">
+            <img src="assets/eventos/salao-decorado.jpg" alt="Salão da Iluminato decorado com mesa de doces e elementos verdes" width="1024" height="683" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-lightbox="galeria" data-src="assets/estrutura/area-externa.jpg" data-caption="Família celebrando na área externa do espaço.">
+            <img src="assets/estrutura/area-externa.jpg" alt="Família celebrando na área externa da Iluminato Eventos" width="1024" height="683" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-lightbox="galeria" data-src="assets/eventos/festa-infantil.jpg" data-caption="Festa infantil na entrada do espaço.">
+            <img src="assets/eventos/festa-infantil.jpg" alt="Festa infantil na entrada da Iluminato Eventos" width="1024" height="683" loading="lazy">
+          </button>
+          <button class="gallery__item" type="button" data-lightbox="galeria" data-src="assets/sobre/equipe-iluminato.jpg" data-caption="A equipe Iluminato durante um evento.">
+            <img src="assets/sobre/equipe-iluminato.jpg" alt="Equipe da Iluminato Eventos atendendo um evento" width="1024" height="683" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Depoimentos ===== -->
+    <section class="section section--verde" id="depoimentos">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow eyebrow--light" data-reveal>Depoimentos</p>
+          <h2 data-reveal style="--d:.1s">Histórias que começaram aqui.</h2>
+        </header>
+
+        <div class="testimonials" data-carousel data-reveal style="--d:.2s">
+          <div class="testimonials__viewport" aria-live="polite">
+            <ul class="testimonials__track">
+              <li class="testimonial is-active">
+                <p class="testimonial__stars" aria-hidden="true">★★★★★</p>
+                <blockquote>
+                  <p>“Faltam palavras para agradecer por ter tirado do papel um dos momentos mais lindos das nossas vidas… a primeira volta ao sol da Amália.”</p>
+                </blockquote>
+                <cite>Aniversário da Amália <span>· 1 ano</span></cite>
+              </li>
+              <li class="testimonial">
+                <p class="testimonial__stars" aria-hidden="true">★★★★★</p>
+                <blockquote>
+                  <p>“Estar na Iluminato é mágico, é luz, é aprendizado, é festejar a vida.”</p>
+                </blockquote>
+                <cite>Aniversário do Ernesto <span>· 1 ano</span></cite>
+              </li>
+              <li class="testimonial">
+                <p class="testimonial__stars" aria-hidden="true">★★★★★</p>
+                <blockquote>
+                  <p>“Estava tudo lindo, superou nossas expectativas. Todos os convidados elogiando.”</p>
+                </blockquote>
+                <cite>Evento realizado na Iluminato</cite>
+              </li>
+              <li class="testimonial">
+                <p class="testimonial__stars" aria-hidden="true">★★★★★</p>
+                <blockquote>
+                  <p>“Guria! Eu e o Juliano queremos te agradecer pelo teu trabalho.”</p>
+                </blockquote>
+                <cite>Aniversário do Benjamin <span>· 1 ano</span></cite>
+              </li>
+            </ul>
+          </div>
+
+          <div class="carousel-nav">
+            <button class="carousel-btn" type="button" data-carousel-prev aria-label="Depoimento anterior">
+              <svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+            </button>
+            <div class="carousel-dots" role="tablist" aria-label="Selecionar depoimento"></div>
+            <button class="carousel-btn" type="button" data-carousel-next aria-label="Próximo depoimento">
+              <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonial-photos" data-reveal style="--d:.3s">
+          <p class="testimonial-photos__label">Clientes Iluminato</p>
+          <div class="testimonial-photos__row">
+            <button class="testimonial-photos__item" type="button" data-lightbox="depoimentos" data-src="assets/depoimentos/amalia-1-ano.jpg" data-caption="Depoimento — Aniversário da Amália de 1 ano.">
+              <img src="assets/depoimentos/amalia-1-ano.jpg" alt="Depoimento de cliente: aniversário da Amália de 1 ano" width="590" height="590" loading="lazy">
+            </button>
+            <button class="testimonial-photos__item" type="button" data-lightbox="depoimentos" data-src="assets/depoimentos/ernesto-1-ano.jpg" data-caption="Depoimento — Aniversário do Ernesto de 1 ano.">
+              <img src="assets/depoimentos/ernesto-1-ano.jpg" alt="Depoimento de cliente: aniversário do Ernesto de 1 ano" width="590" height="590" loading="lazy">
+            </button>
+            <button class="testimonial-photos__item" type="button" data-lightbox="depoimentos" data-src="assets/depoimentos/benjamin-1-ano.jpg" data-caption="Depoimento — Aniversário do Benjamin de 1 ano.">
+              <img src="assets/depoimentos/benjamin-1-ano.jpg" alt="Depoimento de cliente: aniversário do Benjamin de 1 ano" width="1024" height="1024" loading="lazy">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Localização ===== -->
+    <section class="section section--off" id="localizacao">
+      <div class="container loc">
+        <div class="loc__info">
+          <p class="eyebrow" data-reveal>Localização</p>
+          <h2 data-reveal style="--d:.1s">A poucos passos do seu grande momento.</h2>
+
+          <address class="loc__address" data-reveal style="--d:.2s">
+            <strong>Iluminato Eventos</strong>
+            <span>BR-287 — Santiago, RS</span>
+            <span>97700-000 — Brasil</span>
+          </address>
+
+          <div class="loc__actions" data-reveal style="--d:.3s">
+            <a class="btn btn--verde" href="https://www.google.com/maps/search/?api=1&amp;query=Iluminato+Eventos%2C+BR-287%2C+Santiago+-+RS%2C+97700-000" target="_blank" rel="noopener" data-map>
+              Abrir no mapa
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#i-pin"/></svg>
+            </a>
+            <a class="link-arrow" href="tel:+5555999357369" data-tel>
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"/></svg>
+              <span data-phone>(55) 99935-7369</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="loc__map" data-reveal style="--d:.2s">
+          <iframe
+            src="https://www.google.com/maps?q=Iluminato%20Eventos%2C%20BR-287%2C%20Santiago%20-%20RS%2C%2097700-000&amp;output=embed"
+            title="Mapa — Iluminato Eventos, BR-287, Santiago - RS"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA final ===== -->
+    <section class="cta-final" id="contato">
+      <img class="cta-final__media" src="assets/eventos/noite-love.jpg" alt="" width="1024" height="683" loading="lazy">
+      <div class="cta-final__overlay" aria-hidden="true"></div>
+      <div class="container cta-final__content">
+        <p class="eyebrow eyebrow--light" data-reveal>Vamos conversar</p>
+        <h2 data-reveal style="--d:.1s">Seu momento merece um lugar inesquecível.</h2>
+        <p class="cta-final__lead" data-reveal style="--d:.2s">Fale com a Iluminato Eventos e descubra como realizar sua celebração em Santiago/RS.</p>
+        <div data-reveal style="--d:.3s">
+          <a class="btn btn--gold btn--lg" href="https://wa.me/5555999357369?text=Ol%C3%A1%21%20Conheci%20a%20Iluminato%20Eventos%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20e%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-whatsapp>
+            Solicitar orçamento
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
       <div class="footer__brand">
-        <img class="footer__logo" src="assets/img/logo-iluminato.jpg" width="74" height="74" alt="Iluminato — Espaço de Eventos" loading="lazy" decoding="async">
-        <p class="footer__phrase">Momentos que merecem um cenário à altura.</p>
+        <img src="assets/logo/iluminato-logo.png" alt="Iluminato Eventos" width="435" height="164" loading="lazy">
+        <p>Eternize a celebração em um espaço planejado para momentos inesquecíveis.</p>
       </div>
 
-      <div>
+      <nav class="footer__col" aria-label="Navegação do rodapé">
         <h2 class="footer__title">Navegação</h2>
-        <ul class="footer__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="espaco.html">O Espaço</a></li>
-          <li><a href="eventos.html">Eventos</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="experiencia.html">Experiência</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="faq.html">Perguntas frequentes</a></li>
-          <li><a href="contato.html">Contato</a></li>
+        <ul>
+          <li><a href="#espaco">O Espaço</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#estrutura">Estrutura</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#localizacao">Localização</a></li>
         </ul>
-      </div>
+      </nav>
 
-      <!-- TROCAR: telefone, WhatsApp, e-mail, endereço e horários -->
-      <div>
+      <div class="footer__col">
         <h2 class="footer__title">Contato</h2>
-        <ul class="footer__list">
-          <li><a href="tel:+550000000000" data-track="phone_click" data-track-label="footer">(00) 0000-0000</a></li>
-          <li><a href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" data-track="whatsapp_click" data-track-label="footer">WhatsApp</a></li>
-          <li><a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a></li>
-          <li>Rua Exemplo, 000 — Bairro<br>[Cidade] / [UF]</li>
-          <li>Seg a Sex, 9h às 19h<br>Sáb, 9h às 14h</li>
+        <ul>
+          <li><a href="tel:+5555999357369" data-tel><span data-phone>(55) 99935-7369</span></a></li>
+          <li><span>Santiago — RS</span></li>
+          <li><span>BR-287 · 97700-000</span></li>
+          <li>
+            <a href="https://wa.me/5555999357369?text=Ol%C3%A1%21%20Conheci%20a%20Iluminato%20Eventos%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20e%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-whatsapp>WhatsApp</a>
+          </li>
         </ul>
       </div>
 
-      <div>
-        <h2 class="footer__title">Instagram</h2>
-        <ul class="footer__list">
-          <li><a href="https://www.instagram.com/seuperfil/" target="_blank" rel="noopener" data-track="instagram_click" data-track-label="footer">@seuperfil</a></li>
-          <li><a href="contato.html" class="link-arrow">Agendar uma visita</a></li>
+      <div class="footer__col">
+        <h2 class="footer__title">Redes sociais</h2>
+        <ul class="footer__social">
+          <li data-social-item="instagram" hidden>
+            <a href="#" target="_blank" rel="noopener" data-social="instagram">
+              <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg> Instagram
+            </a>
+          </li>
+          <li data-social-item="facebook" hidden>
+            <a href="#" target="_blank" rel="noopener" data-social="facebook">
+              <svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5555999357369?text=Ol%C3%A1%21%20Conheci%20a%20Iluminato%20Eventos%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20e%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-whatsapp>
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp
+            </a>
+          </li>
         </ul>
       </div>
     </div>
 
     <div class="footer__bottom">
-      <span>© <span data-year>2026</span> Iluminato — Espaço de Eventos</span>
-      <span>Todos os direitos reservados.</span>
+      <div class="container">
+        <p>© <span data-year>2026</span> Iluminato Eventos — Todos os direitos reservados.</p>
+      </div>
     </div>
+  </footer>
+
+  <!-- ===== WhatsApp flutuante ===== -->
+  <a class="wa-float" href="https://wa.me/5555999357369?text=Ol%C3%A1%21%20Conheci%20a%20Iluminato%20Eventos%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20e%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-whatsapp aria-label="Solicitar orçamento pelo WhatsApp — abre em nova aba">
+    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de imagem" hidden>
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Fechar visualização">
+      <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Imagem anterior">
+      <svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" src="" alt="">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Próxima imagem">
+      <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+    </button>
+    <p class="lightbox__counter" aria-live="polite"></p>
   </div>
-</footer>
 
-<!-- TROCAR: número do WhatsApp (formato 55 + DDD + número) -->
-<a class="whatsapp-float" href="https://wa.me/550000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20espa%C3%A7o%20e%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20eventos." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp" data-track="whatsapp_click" data-track-label="flutuante">
-  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2.5A9.46 9.46 0 0 0 2.6 12c0 1.67.44 3.3 1.28 4.74L2.5 21.5l4.9-1.28A9.46 9.46 0 1 0 12.04 2.5zm0 17.35c-1.45 0-2.86-.39-4.1-1.12l-.29-.17-2.91.76.78-2.84-.19-.29a7.87 7.87 0 1 1 6.71 3.66z"/></svg>
-  <span class="whatsapp-float__label">Falar pelo WhatsApp</span>
-</a>
-
-<script src="js/site.js" defer></script>
+  <script src="js/content.js"></script>
+  <script src="js/site.js"></script>
 </body>
 </html>
